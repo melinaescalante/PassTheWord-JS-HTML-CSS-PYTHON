@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{url_for('static',filename='final.css') }}">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+    </style>
+    <title> ¡Terminaste! </title>
+</head>
+<body onload="cargarPuntaje()">
+    <header>
+        <div class= "contenedor">
+            <nav class="menu">
+                <a href="/salirJuego"><strong> SALIR </strong></a>
+            </nav>
+        </div>    
+        <div class="arriba">
+        <h3 class = "h3"> ¡Terminaste! </h3>
+        <br>
+        <br>
+        <h1 class = "h1"> TU PUNTAJE ES </h1>
+        <br>
+        <h2 class = "h2" id="puntaje" onload="cargarPuntaje()"> puntaje </h2>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="abajo">
+            <h4 class = "h4"> ¿Querés volver a jugar?</h4>
+            <a class="btn" id="dos" href="/juego">SÍ</a>
+            <a class="btn" id="tres" href="/salirJuego">NO</a>
+        </div>
+    </header>
+    <script>
+      function cargarPuntaje() {
+	      var puntaje = localStorage.getItem("puntaje");
+	      console.log(puntaje)
+	      document.getElementById("puntaje").innerHTML = `${puntaje}`
+      }
+    </script> 
+</body>
+</html>

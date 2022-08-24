@@ -1,0 +1,85 @@
+body{
+    background-color: #0077b6;
+    font-family: 'Libre Baskerville', serif;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+header .menu{
+    margin:30px 0;
+    display:flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+header .menu a:hover{
+    text-decoration: solid;
+    color:rgb(66, 129, 218);
+}
+
+header .menu a{
+    font-size: 18px;
+    font-weight: 100;
+    display: inline-block;
+    margin:0 60px;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+header .contenedor .caja .menu{
+    background-color: #003049;
+    ;
+}
+
+.cont .h3{
+    font-size: 18px;
+    display: inline-block;
+    color:rgb(255, 255, 255);
+    text-align: justify;
+}
+.cont .h2{
+    font-size: 25px;
+    display: inline-block;
+    color: #ade8f4;
+    text-align: justify;
+}
+
+.h1{
+    font-size: 35px;
+    color:#ffffff;
+    text-align:center;
+    margin-top: 3%;
+}
+
+.cont{
+    display: inline-block;
+    margin: 60px;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: justify;
+    font-size: 15px;
+}
+.Protesta{
+    position: sticky;
+    float: right;
+    margin-top: 6%;
+    /*right: 50%; */
+    /*vertical-align: baseline;*/
+}
+.texto{
+    display:flex;
+    flex-direction: column;
+    margin-right: 36%;
+}
+.Agenda{
+    position: sticky;
+    float: left;
+}
+.texto2{
+    display:flex;
+    flex-direction: column;
+    margin-left: 43%;
+}
